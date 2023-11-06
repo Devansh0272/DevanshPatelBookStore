@@ -1,4 +1,5 @@
-using DevanshPatelBookStore.Data;
+
+using DevanshPatelBookStore.DataAccess.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -13,7 +14,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DevanshPatelBookStore
+namespace DevanshBookStore
 {
     public class Startup
     {
@@ -32,7 +33,7 @@ namespace DevanshPatelBookStore
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDatabaseDeveloperPageExceptionFilter();
 
-            services.AddDefaultIdentity<IdentityUser>()      // options => options.SignIn.RequireConfirmedAccount = true
+            services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
         }
@@ -69,3 +70,4 @@ namespace DevanshPatelBookStore
         }
     }
 }
+
