@@ -13,11 +13,13 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.17" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.17" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\DevanshPatelBooks.DataAccess\DevanshPatelBooks.DataAccess.csproj" />
     <ProjectReference Include="..\DevanshPatelBooks.Models\DevanshPatelBooks.Models.csproj" />
+    <ProjectReference Include="..\DevanshPatelBooks.Utility\DevanshPatelBooks.Utility.csproj" />
   </ItemGroup>
 
 </Project>
