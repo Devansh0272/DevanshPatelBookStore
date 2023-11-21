@@ -16,6 +16,7 @@ namespace DevanshPatelBookStore.DataAccess.Data
         public DbSet<Category> Categories { get; set; }
         public object Category { get; internal set; }
         public DbSet<CoverType> CoverTypes { get; set; }
+        public DbSet<Product> Products { get; set; }
 
     }
 }
